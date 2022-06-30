@@ -1,0 +1,47 @@
+aplicacao:
+  nome: '@project.name@'
+  descricao: '@project.description@'
+  versao: '@project.version@'
+  jwt:
+    validity: 18000
+    secret: anderson
+
+cliente-application.allows-origin: 0.0.0.0
+
+spring.jpa.database: POSTGRESQL
+#spring.jpa.generate-ddl: true
+spring.jpa.hibernate.ddl-auto: update
+
+spring.jackson.deserialization.fail-on-unknown-properties: true
+spring.jackson.date-format: yyyy-MM-dd
+
+spring.flyway.schemas: public
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:votacaodb
+    username: h2
+    password:
+    #hikari:
+    #  schema: public
+  batch:
+    jdbc:
+      initialize-schema: always
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  database:
+    driverClassName: org.postgresql.Driver
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+    springdoc:
+      api-docs:
+        path: /api-docs
+
+
+
