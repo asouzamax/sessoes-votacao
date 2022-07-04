@@ -1,0 +1,353 @@
+2022-07-04 09:58:42.637 [INFO] [background-preinit]
+				[org.hibernate.validator.internal.util.Version:21] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-04 09:58:42.640 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:55] Starting SicrediSessaoVotacao using Java 11.0.11 on avenuecode-MacBook-Pro with PID 6226 (/Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao/target/classes started by anderson.alves in /Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao)
+2022-07-04 09:58:42.642 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:634] No active profile set, falling back to 1 default profile: "default"
+2022-07-04 09:58:44.391 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-04 09:58:44.392 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-07-04 09:58:44.393 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 09:58:44.463 [INFO] [restartedMain]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-07-04 09:58:44.600 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] Flyway Community Edition 8.5.11 by Redgate
+2022-07-04 09:58:44.600 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.11
+2022-07-04 09:58:44.600 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] 
+2022-07-04 09:58:44.606 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2022-07-04 09:58:44.727 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-07-04 09:58:44.742 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.BaseDatabaseType:37] Database: jdbc:h2:mem:votacaodb (H2 2.1)
+2022-07-04 09:58:44.784 [WARN] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Database:41] Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-07-04 09:58:44.802 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Schema:37] Creating schema "public" ...
+2022-07-04 09:58:44.806 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory:37] Creating Schema History table "public"."flyway_schema_history" ...
+2022-07-04 09:58:44.866 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Current version of schema "public": null
+2022-07-04 09:58:44.867 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Schema "public" is up to date. No migration necessary.
+2022-07-04 09:58:44.951 [INFO] [restartedMain]
+				[org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-04 09:58:44.985 [INFO] [restartedMain]
+				[org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-04 09:58:45.100 [INFO] [restartedMain]
+				[org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-04 09:58:45.193 [INFO] [restartedMain]
+				[org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-07-04 09:58:45.815 [INFO] [restartedMain]
+				[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-04 09:58:46.590 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-04 09:58:46.927 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-04 09:58:46.954 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:160] Context refreshed
+2022-07-04 09:58:46.965 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:163] Found 1 custom documentation plugin(s)
+2022-07-04 09:58:46.998 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2022-07-04 09:58:47.128 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_1
+2022-07-04 09:58:47.136 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: readAllUsingGET_1
+2022-07-04 09:58:47.148 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_2
+2022-07-04 09:58:47.173 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:61] Started SicrediSessaoVotacao in 4.94 seconds (JVM running for 11.152)
+2022-07-04 09:59:51.440 [INFO] [http-nio-8080-exec-1]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 10:02:38.269 [INFO] [http-nio-8080-exec-7]
+				[org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-07-04 10:02:38.283 [ERROR] [http-nio-8080-exec-7]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.br.sicredi.domain.voto.Voto; nested exception is java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.br.sicredi.domain.voto.Voto] with root cause
+org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.br.sicredi.domain.voto.Voto
+	at org.hibernate.engine.internal.ForeignKeys.getEntityIdentifierIfNotUnsaved(ForeignKeys.java:347)
+	at org.hibernate.type.EntityType.getIdentifier(EntityType.java:508)
+	at org.hibernate.type.EntityType.nullSafeSet(EntityType.java:281)
+	at org.hibernate.persister.collection.AbstractCollectionPersister.writeElement(AbstractCollectionPersister.java:925)
+	at org.hibernate.persister.collection.AbstractCollectionPersister.insertRows(AbstractCollectionPersister.java:1585)
+	at org.hibernate.action.internal.CollectionUpdateAction.execute(CollectionUpdateAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy136.save(Unknown Source)
+	at com.br.sicredi.service.AssembleiaService.update(AssembleiaService.java:34)
+	at com.br.sicredi.service.VotacaoService.create(VotacaoService.java:40)
+	at com.br.sicredi.api.rest.VotacaoRest.create(VotacaoRest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-04 10:05:22.728 [ERROR] [HikariPool-1 connection adder]
+				[com.zaxxer.hikari.pool.HikariPool:498] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240)
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232)
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1480)
+	at org.h2.command.Command.executeQuery(Command.java:180)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-04 10:05:22.930 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-07-04 10:05:22.983 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-07-04 10:05:48.857 [INFO] [background-preinit]
+				[org.hibernate.validator.internal.util.Version:21] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-04 10:05:48.857 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:55] Starting SicrediSessaoVotacao using Java 11.0.11 on avenuecode-MacBook-Pro with PID 6319 (/Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao/target/classes started by anderson.alves in /Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao)
+2022-07-04 10:05:48.863 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:634] No active profile set, falling back to 1 default profile: "default"
+2022-07-04 10:05:50.586 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-04 10:05:50.587 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-07-04 10:05:50.587 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 10:05:50.671 [INFO] [restartedMain]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-07-04 10:05:50.785 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] Flyway Community Edition 8.5.11 by Redgate
+2022-07-04 10:05:50.785 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.11
+2022-07-04 10:05:50.785 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] 
+2022-07-04 10:05:50.791 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2022-07-04 10:05:50.905 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-07-04 10:05:50.917 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.BaseDatabaseType:37] Database: jdbc:h2:mem:votacaodb (H2 2.1)
+2022-07-04 10:05:50.945 [WARN] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Database:41] Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-07-04 10:05:50.958 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Schema:37] Creating schema "public" ...
+2022-07-04 10:05:50.960 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory:37] Creating Schema History table "public"."flyway_schema_history" ...
+2022-07-04 10:05:50.998 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Current version of schema "public": null
+2022-07-04 10:05:50.999 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Schema "public" is up to date. No migration necessary.
+2022-07-04 10:05:51.073 [INFO] [restartedMain]
+				[org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-04 10:05:51.110 [INFO] [restartedMain]
+				[org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-04 10:05:51.212 [INFO] [restartedMain]
+				[org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-04 10:05:51.292 [INFO] [restartedMain]
+				[org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-07-04 10:05:51.845 [INFO] [restartedMain]
+				[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-04 10:05:52.468 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-04 10:05:52.793 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-04 10:05:52.814 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:160] Context refreshed
+2022-07-04 10:05:52.825 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:163] Found 1 custom documentation plugin(s)
+2022-07-04 10:05:52.854 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2022-07-04 10:05:52.982 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_1
+2022-07-04 10:05:52.987 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: readAllUsingGET_1
+2022-07-04 10:05:52.997 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_2
+2022-07-04 10:05:53.020 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:61] Started SicrediSessaoVotacao in 4.61 seconds (JVM running for 10.621)
+2022-07-04 10:06:20.554 [INFO] [http-nio-8080-exec-1]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 10:10:53.334 [WARN] [HikariPool-1 housekeeper]
+				[com.zaxxer.hikari.pool.HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s245ms).
+2022-07-04 10:11:42.009 [WARN] [HikariPool-1 housekeeper]
+				[com.zaxxer.hikari.pool.HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s676ms).
+2022-07-04 10:11:42.197 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-07-04 10:11:42.202 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-07-04 10:14:35.125 [INFO] [background-preinit]
+				[org.hibernate.validator.internal.util.Version:21] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-04 10:14:35.126 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:55] Starting SicrediSessaoVotacao using Java 11.0.11 on avenuecode-MacBook-Pro with PID 6411 (/Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao/target/classes started by anderson.alves in /Users/anderson.alves/Documents/projects/java/sicredi/sessoes-votacao)
+2022-07-04 10:14:35.129 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:634] No active profile set, falling back to 1 default profile: "default"
+2022-07-04 10:14:36.650 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-04 10:14:36.650 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-07-04 10:14:36.651 [INFO] [restartedMain]
+				[org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 10:14:36.731 [INFO] [restartedMain]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-07-04 10:14:36.830 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] Flyway Community Edition 8.5.11 by Redgate
+2022-07-04 10:14:36.831 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.11
+2022-07-04 10:14:36.831 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.license.VersionPrinter:37] 
+2022-07-04 10:14:36.836 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2022-07-04 10:14:36.949 [INFO] [restartedMain]
+				[com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-07-04 10:14:36.963 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.BaseDatabaseType:37] Database: jdbc:h2:mem:votacaodb (H2 2.1)
+2022-07-04 10:14:36.998 [WARN] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Database:41] Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022-07-04 10:14:37.012 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.database.base.Schema:37] Creating schema "public" ...
+2022-07-04 10:14:37.015 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory:37] Creating Schema History table "public"."flyway_schema_history" ...
+2022-07-04 10:14:37.054 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Current version of schema "public": null
+2022-07-04 10:14:37.056 [INFO] [restartedMain]
+				[org.flywaydb.core.internal.command.DbMigrate:37] Schema "public" is up to date. No migration necessary.
+2022-07-04 10:14:37.127 [INFO] [restartedMain]
+				[org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-04 10:14:37.166 [INFO] [restartedMain]
+				[org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-04 10:14:37.287 [INFO] [restartedMain]
+				[org.hibernate.annotations.common.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-04 10:14:37.365 [INFO] [restartedMain]
+				[org.hibernate.dialect.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-07-04 10:14:37.942 [INFO] [restartedMain]
+				[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-04 10:14:38.614 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-04 10:14:38.946 [INFO] [restartedMain]
+				[org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-04 10:14:38.974 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:160] Context refreshed
+2022-07-04 10:14:38.986 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:163] Found 1 custom documentation plugin(s)
+2022-07-04 10:14:39.011 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2022-07-04 10:14:39.142 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_1
+2022-07-04 10:14:39.147 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: readAllUsingGET_1
+2022-07-04 10:14:39.159 [INFO] [restartedMain]
+				[springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator:40] Generating unique operation named: createUsingPOST_2
+2022-07-04 10:14:39.183 [INFO] [restartedMain]
+				[com.br.sicredi.SicrediSessaoVotacao:61] Started SicrediSessaoVotacao in 4.409 seconds (JVM running for 10.415)
+2022-07-04 10:14:54.629 [INFO] [http-nio-8080-exec-1]
+				[org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 10:24:37.997 [WARN] [HikariPool-1 housekeeper]
+				[com.zaxxer.hikari.pool.HikariPool:780] HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s791ms), soft-evicting connections from pool.
+2022-07-04 10:32:45.495 [ERROR] [HikariPool-1 connection adder]
+				[com.zaxxer.hikari.pool.HikariPool:498] HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240)
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1173)
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1486)
+	at org.h2.command.Command.executeQuery(Command.java:180)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-04 10:32:45.591 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-07-04 10:32:45.751 [INFO] [SpringApplicationShutdownHook]
+				[com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.

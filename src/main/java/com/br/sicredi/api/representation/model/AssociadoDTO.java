@@ -15,8 +15,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@EqualsAndHashCode(callSuper=true)
+@EqualsAndHashCode(callSuper = true)
 public class AssociadoDTO extends BaseDTO {
 
-	private String nome;
+    private String nome;
 }

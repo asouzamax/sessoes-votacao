@@ -7,8 +7,8 @@ import lombok.Getter;
 @Builder
 public class ErrorCampo {
 
-  private final String nome;
+    private final String nome;
 
-  private final String descricao;
+    private final String descricao;
 
 }

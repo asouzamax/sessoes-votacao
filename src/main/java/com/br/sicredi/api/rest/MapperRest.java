@@ -12,31 +12,31 @@ import java.util.stream.Collectors;
 
 public abstract class MapperRest<M extends BaseEntity, R extends BaseDTO> {
 
-  @Autowired
-  private ModelMapper modelMapper;
+    @Autowired
+    private ModelMapper modelMapper;
 
-  @SuppressWarnings("unchecked")
-  private Class<M> getModelClass() {
-    Type type = getClass().getGenericSuperclass();
-    return (Class<M>) ((ParameterizedType) type).getActualTypeArguments()[0];
-  }
+    @SuppressWarnings("unchecked")
+    private Class<M> getModelClass() {
+        Type type = getClass().getGenericSuperclass();
+        return (Class<M>) ((ParameterizedType) type).getActualTypeArguments()[0];
+    }
 
-  @SuppressWarnings("unchecked")
-  private Class<R> getRepresentationClass() {
-    Type type = getClass().getGenericSuperclass();
-    return (Class<R>) ((ParameterizedType) type).getActualTypeArguments()[1];
-  }
+    @SuppressWarnings("unchecked")
+    private Class<R> getRepresentationClass() {
+        Type type = getClass().getGenericSuperclass();
+        return (Class<R>) ((ParameterizedType) type).getActualTypeArguments()[1];
+    }
 
-  protected M toModel(R dto) {
-    return modelMapper.map(dto, getModelClass());
-  }
+    protected M toModel(R dto) {
+        return modelMapper.map(dto, getModelClass());
+    }
 
-  protected R fromModel(M model) {
-    return modelMapper.map(model, getRepresentationClass());
-  }
+    protected R fromModel(M model) {
+        return modelMapper.map(model, getRepresentationClass());
+    }
 
-  protected List<R> fromModel(List<M> modelList) {
-    return modelList.stream().map(model -> fromModel(model)).collect(Collectors.toList());
-  }
+    protected List<R> fromModel(List<M> modelList) {
+        return modelList.stream().map(model -> fromModel(model)).collect(Collectors.toList());
+    }
 
 }

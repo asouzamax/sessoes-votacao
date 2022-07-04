@@ -10,6 +10,9 @@
         <module name="sessoes-votacao" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sessoes-votacao" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

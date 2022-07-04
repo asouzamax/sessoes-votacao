@@ -13,19 +13,20 @@ import java.util.Collection;
 @Getter
 @Builder
 @JsonInclude(Include.NON_NULL)
-@JsonPropertyOrder({ "code", "status", "titulo", "momento" })
+@JsonPropertyOrder({"code", "status", "titulo", "momento"})
 public class Error {
 
-  private final HttpStatus status;
+    private final HttpStatus status;
 
-  @Builder.Default private final LocalDateTime momento = LocalDateTime.now();
+    @Builder.Default
+    private final LocalDateTime momento = LocalDateTime.now();
 
-  private final String titulo; 
-  
-  private final Collection<ErrorCampo> campos;
+    private final String titulo;
 
-  public int getCode() {
-    return status.value();
-  }
+    private final Collection<ErrorCampo> campos;
+
+    public int getCode() {
+        return status.value();
+    }
 
 }

@@ -26,34 +26,34 @@ import java.util.Set;
 @NoArgsConstructor
 public class Assembleia extends BaseEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	private String pauta;
+    private String pauta;
 
-	@ManyToMany(cascade= CascadeType.MERGE)
-	@JoinTable(name = "assembleia_votacao",
-			joinColumns = { @JoinColumn(name = "assembleia_id") },
-			inverseJoinColumns = { @JoinColumn(name = "voto_id") })
-	private Set<Voto> votacao = new HashSet<>();
+    @ManyToMany(cascade = CascadeType.MERGE)
+    @JoinTable(name = "assembleia_votacao",
+            joinColumns = {@JoinColumn(name = "assembleia_id")},
+            inverseJoinColumns = {@JoinColumn(name = "voto_id")})
+    private Set<Voto> votacao = new HashSet<>();
 
-	private OffsetDateTime abertura;
-	private StatusAssembleiaEnum status;
+    private OffsetDateTime abertura;
+    private StatusAssembleiaEnum status;
 
-	public void addVoto(Voto voto){
-		if(isExists(voto)){
-			throw new VotoJaComputadoException();
-		}
+    public void addVoto(Voto voto) {
+        if (isExists(voto)) {
+            throw new VotoJaComputadoException();
+        }
 
-		getVotacao().add(voto);
+        getVotacao().add(voto);
 
-	}
+    }
 
-	private boolean isExists(Voto voto) {
-		return getVotacao()
-				.stream().filter(v -> v.equals(voto)).count() == 1;
-	}
+    private boolean isExists(Voto voto) {
+        return getVotacao()
+                .stream().filter(v -> v.equals(voto)).count() == 1;
+    }
 
 }

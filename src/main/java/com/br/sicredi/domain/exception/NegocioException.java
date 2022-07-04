@@ -8,20 +8,20 @@ import org.springframework.http.HttpStatus;
 @Setter
 public class NegocioException extends RuntimeException {
 
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-  private final HttpStatus status;
+    private final HttpStatus status;
 
-  public NegocioException(final HttpStatus status, final String message) {
-    super(message);
-    this.status = status;
-  }
+    public NegocioException(final HttpStatus status, final String message) {
+        super(message);
+        this.status = status;
+    }
 
-  public int cogetCode() {
-    return status.value();
-  }
+    public int cogetCode() {
+        return status.value();
+    }
 
 }

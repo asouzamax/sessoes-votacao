@@ -2,11 +2,10 @@ package com.br.sicredi.service;
 
 import com.br.sicredi.domain.assembleia.Assembleia;
 import com.br.sicredi.domain.assembleia.StatusAssembleiaEnum;
-import com.br.sicredi.domain.associado.Associado;
-import com.br.sicredi.domain.exception.AssembleiaNaoEncontradaException;
 import com.br.sicredi.domain.exception.NegocioException;
 import com.br.sicredi.domain.voto.TipoVotoEnum;
 import com.br.sicredi.domain.voto.Voto;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -14,14 +13,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
@@ -58,7 +54,7 @@ class VotacaoServiceTest extends AbstractServiceTest {
         final Voto result = votacaoServiceUnderTest.create(assembleia.getId(), TipoVotoEnum.SIM.name(), getAssociado().getId());
 
         // Verify the results
-        assertThat(result).isEqualTo(expectedResult);
+        Assertions.assertEquals(result, expectedResult);
         verify(mockAssembleiaService).update(any(Assembleia.class));
     }
 
@@ -74,7 +70,7 @@ class VotacaoServiceTest extends AbstractServiceTest {
         Throwable exception = assertThrows(NegocioException.class, () -> {
             votacaoServiceUnderTest.create(assembleia.getId(), TipoVotoEnum.SIM.name(), getAssociado().getId());
         });
-        assertEquals("O voto ja foi computado!", exception.getMessage());
+        Assertions.assertEquals("O voto ja foi computado!", exception.getMessage());
     }
 
     @Test
@@ -89,7 +85,7 @@ class VotacaoServiceTest extends AbstractServiceTest {
         Throwable exception = assertThrows(NegocioException.class, () -> {
             votacaoServiceUnderTest.create(assembleia.getId(), TipoVotoEnum.SIM.name(), getAssociado().getId());
         });
-        assertEquals("A pauta de votaçao náo esta aberta!", exception.getMessage());
+        Assertions.assertEquals("A pauta de votaçao náo esta aberta!", exception.getMessage());
     }
 
     //

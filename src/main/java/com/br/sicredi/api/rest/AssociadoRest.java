@@ -30,68 +30,68 @@ import java.util.List;
 @Slf4j
 public class AssociadoRest extends MapperRest<Associado, AssociadoDTO> {
 
-	private final AssociadoService service;
-	private final AssociadoRepository repository;
+    private final AssociadoService service;
+    private final AssociadoRepository repository;
 
-	@ApiOperation(value = "Cria um Associado")
-	@ApiResponses(value = {
-			@ApiResponse(code = 201, message = "Cria e retorna um Associado", response = AssociadoDTO.class),
-			@ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@PostMapping
-	@ResponseStatus(HttpStatus.CREATED)
-	public AssociadoDTO create(@Valid @RequestBody AssociadoDTO associado) {
-		final var associadoCriado = service.create(toModel(associado));
-		return fromModel(associadoCriado);
-	}
+    @ApiOperation(value = "Cria um Associado")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Cria e retorna um Associado", response = AssociadoDTO.class),
+            @ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public AssociadoDTO create(@Valid @RequestBody AssociadoDTO associado) {
+        final var associadoCriado = service.create(toModel(associado));
+        return fromModel(associadoCriado);
+    }
 
-	@ApiOperation(value = "Retorna todos os Associadoes")
-	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "Retorna a lista de Associadoes", response = AssociadoDTO[].class),
-			@ApiResponse(code = 400, message = "Erros negociais: validações da dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@GetMapping
-	@ResponseStatus(HttpStatus.OK)
-	public List<AssociadoDTO> readAll() {
-		return fromModel(repository.findAll());
-	}
+    @ApiOperation(value = "Retorna todos os Associadoes")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Retorna a lista de Associadoes", response = AssociadoDTO[].class),
+            @ApiResponse(code = 400, message = "Erros negociais: validações da dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<AssociadoDTO> readAll() {
+        return fromModel(repository.findAll());
+    }
 
-	@ApiOperation(value = "Retorna um Associado")
-	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "Retorna um Associado", response = AssociadoDTO.class),
-			@ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@GetMapping("{id}")
-	@ResponseStatus(HttpStatus.OK)
-	public AssociadoDTO readOne(@PathVariable("id") String id) {
-		return fromModel(repository.findById(id).orElseThrow(() -> new AssociadoNaoEncontradoException()));
-	}
+    @ApiOperation(value = "Retorna um Associado")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Retorna um Associado", response = AssociadoDTO.class),
+            @ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @GetMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public AssociadoDTO readOne(@PathVariable("id") String id) {
+        return fromModel(repository.findById(id).orElseThrow(() -> new AssociadoNaoEncontradoException()));
+    }
 
-	@ApiOperation(value = "Atualiza um Associado")
-	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "Associado atualizado", response = AssociadoDTO.class),
-			@ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@PutMapping
-	@ResponseStatus(HttpStatus.OK)
-	public AssociadoDTO update(@Valid @RequestBody AssociadoDTO Associado) {
-		return fromModel(service.update(toModel(Associado)));
-	}
+    @ApiOperation(value = "Atualiza um Associado")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Associado atualizado", response = AssociadoDTO.class),
+            @ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @PutMapping
+    @ResponseStatus(HttpStatus.OK)
+    public AssociadoDTO update(@Valid @RequestBody AssociadoDTO Associado) {
+        return fromModel(service.update(toModel(Associado)));
+    }
 
-	@ApiOperation(value = "Deleta um Associado")
-	@ApiResponses(value = {
-			@ApiResponse(code = 204, message = "Resposta sem conteúdo"),
-			@ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@DeleteMapping("{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
-	public void delete(@PathVariable("id") String id) {
-		final var Associado = repository.findById(id).orElseThrow(() -> new AssociadoNaoEncontradoException());
-		repository.delete(Associado);
-	}
+    @ApiOperation(value = "Deleta um Associado")
+    @ApiResponses(value = {
+            @ApiResponse(code = 204, message = "Resposta sem conteúdo"),
+            @ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @DeleteMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable("id") String id) {
+        final var Associado = repository.findById(id).orElseThrow(() -> new AssociadoNaoEncontradoException());
+        repository.delete(Associado);
+    }
 }

@@ -35,7 +35,7 @@ public class AssociadoService {
         return repository.save(associado);
     }
 
-    public Associado findById(String id){
+    public Associado findById(String id) {
         return repository.findById(id).orElseThrow(() -> new AssociadoNaoEncontradoException());
     }
 }

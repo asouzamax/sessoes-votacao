@@ -7,6 +7,7 @@ import com.br.sicredi.domain.exception.AssembleiaNaoEncontradaException;
 import com.br.sicredi.domain.exception.NegocioException;
 import com.br.sicredi.domain.voto.TipoVotoEnum;
 import com.br.sicredi.domain.voto.Voto;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -19,8 +20,6 @@ import java.time.ZoneOffset;
 import java.util.Optional;
 import java.util.Set;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -29,11 +28,10 @@ import static org.mockito.Mockito.when;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AssembleiaServiceTest extends AbstractServiceTest {
 
+    Assembleia assembleia;
     @Mock
     private AssembleiaRepository mockRepository;
     private AssembleiaService assembleiaServiceUnderTest;
-
-    Assembleia assembleia;
 
     @BeforeEach
     void setUp() {
@@ -48,39 +46,39 @@ class AssembleiaServiceTest extends AbstractServiceTest {
     void testCreate() {
         when(mockRepository.save(any(Assembleia.class))).thenReturn(assembleia);
         final Assembleia result = assembleiaServiceUnderTest.create(assembleia);
-        assertThat(result.getStatus()).isEqualTo(StatusAssembleiaEnum.CRIADA);
+        Assertions.assertEquals(result.getStatus(), StatusAssembleiaEnum.CRIADA);
 
     }
 
     @Test
     void testUpdate() {
-        when(mockRepository.findById(any())).thenReturn( Optional.of(assembleia));
+        when(mockRepository.findById(any())).thenReturn(Optional.of(assembleia));
         when(mockRepository.save(any(Assembleia.class))).thenReturn(assembleia);
 
         final Assembleia result = assembleiaServiceUnderTest.update(assembleia);
 
-        assertThat(result.getId()).isNotNull();
+        Assertions.assertNotNull(result.getId());
     }
 
     @Test
     void testOpenSession() {
-        when(mockRepository.findById(any())).thenReturn( Optional.of(assembleia));
+        when(mockRepository.findById(any())).thenReturn(Optional.of(assembleia));
         when(mockRepository.save(any(Assembleia.class))).thenReturn(assembleia);
 
         final Assembleia result = assembleiaServiceUnderTest.openSession(assembleia.getId());
 
-        assertThat(result.getStatus()).isEqualTo(StatusAssembleiaEnum.ABERTA);
+        Assertions.assertEquals(result.getStatus(), StatusAssembleiaEnum.ABERTA);
     }
 
     @Test
     void testOpenSessionAlredyOpened() {
         assembleia.setStatus(StatusAssembleiaEnum.ABERTA);
-        when(mockRepository.findById(any())).thenReturn( Optional.of(assembleia));
+        when(mockRepository.findById(any())).thenReturn(Optional.of(assembleia));
 
         Throwable exception = assertThrows(NegocioException.class, () -> {
             assembleiaServiceUnderTest.openSession(assembleia.getId());
         });
-        assertEquals("Assembleia ja em votação", exception.getMessage());
+        Assertions.assertEquals("Assembleia ja em votação", exception.getMessage());
     }
 
     @Test
@@ -89,7 +87,7 @@ class AssembleiaServiceTest extends AbstractServiceTest {
         Throwable exception = assertThrows(AssembleiaNaoEncontradaException.class, () -> {
             assembleiaServiceUnderTest.openSession(assembleia.getId());
         });
-        assertEquals("Assembléia não encontrada", exception.getMessage());
+        Assertions.assertEquals("Assembléia não encontrada", exception.getMessage());
 
     }
 
@@ -98,7 +96,7 @@ class AssembleiaServiceTest extends AbstractServiceTest {
         when(mockRepository.findById(any())).thenReturn(Optional.of(assembleia));
 
         final Assembleia result = assembleiaServiceUnderTest.findAssembleia(assembleia.getId());
-        assertThat(result).isNotNull();
+        Assertions.assertNotNull(result);
 
     }
 

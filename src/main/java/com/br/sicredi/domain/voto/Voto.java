@@ -23,18 +23,17 @@ import javax.persistence.OneToOne;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Voto extends BaseEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "associado_id")
-	@EqualsAndHashCode.Include
-	private Associado associado;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "associado_id")
+    @EqualsAndHashCode.Include
+    private Associado associado;
 
-	private TipoVotoEnum tipo;
-
+    private TipoVotoEnum tipo;
 
 
 }

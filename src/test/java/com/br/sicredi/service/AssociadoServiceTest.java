@@ -1,11 +1,10 @@
 package com.br.sicredi.service;
 
-import com.br.sicredi.domain.assembleia.StatusAssembleiaEnum;
 import com.br.sicredi.domain.associado.Associado;
 import com.br.sicredi.domain.associado.AssociadoRepository;
-import com.br.sicredi.domain.exception.AssembleiaNaoEncontradaException;
 import com.br.sicredi.domain.exception.AssociadoJaCadastradoException;
 import com.br.sicredi.domain.exception.AssociadoNaoEncontradoException;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -15,15 +14,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class AssociadoServiceTest extends AbstractServiceTest{
+class AssociadoServiceTest extends AbstractServiceTest {
 
     @Mock
     private AssociadoRepository mockRepository;
@@ -42,7 +39,7 @@ class AssociadoServiceTest extends AbstractServiceTest{
         when(mockRepository.save(any(Associado.class))).thenReturn(getAssociado());
 
         final Associado result = associadoServiceUnderTest.create(getAssociado());
-        assertThat(result.getNome()).isEqualTo(getAssociado().getNome());
+        Assertions.assertEquals(result.getNome(), getAssociado().getNome());
 
     }
 
@@ -52,7 +49,7 @@ class AssociadoServiceTest extends AbstractServiceTest{
         Throwable exception = assertThrows(AssociadoJaCadastradoException.class, () -> {
             associadoServiceUnderTest.create(getAssociado());
         });
-        assertEquals("Associado já está cadastrado: "+getAssociado().getNome(), exception.getMessage());
+        Assertions.assertEquals("Associado já está cadastrado: " + getAssociado().getNome(), exception.getMessage());
 
     }
 
@@ -66,7 +63,7 @@ class AssociadoServiceTest extends AbstractServiceTest{
         // Run the test
         final Associado result = associadoServiceUnderTest.update(associado);
 
-        assertThat(result.getNome()).isEqualTo(associado.getNome());
+        Assertions.assertEquals(result.getNome(), associado.getNome());
     }
 
     @Test
@@ -76,7 +73,7 @@ class AssociadoServiceTest extends AbstractServiceTest{
         Throwable exception = assertThrows(AssociadoNaoEncontradoException.class, () -> {
             associadoServiceUnderTest.update(getAssociado());
         });
-        assertEquals("Associado não encontrado", exception.getMessage());
+        Assertions.assertEquals("Associado não encontrado", exception.getMessage());
 
     }
 
@@ -86,7 +83,7 @@ class AssociadoServiceTest extends AbstractServiceTest{
 
         final Associado result = associadoServiceUnderTest.findById(getAssociado().getId());
 
-        assertThat(result.getId()).isNotNull();
+        Assertions.assertNotNull(result.getId());
     }
 
 }

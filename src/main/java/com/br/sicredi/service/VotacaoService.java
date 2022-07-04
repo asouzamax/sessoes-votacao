@@ -16,26 +16,26 @@ import java.time.OffsetDateTime;
 @Slf4j
 public class VotacaoService {
 
-	private AssembleiaService assembleiaService;
-	private AssociadoService associadoService;
+    private AssembleiaService assembleiaService;
+    private AssociadoService associadoService;
 
-	public Voto create(final String assembleiaId, final String tipovoto, String associadoId) {
-		final var assembleiaEncontrada = assembleiaService.findAssembleia(assembleiaId);
-		final var associadoEncontrado = associadoService.findById(associadoId);
+    public Voto create(final String assembleiaId, final String tipovoto, String associadoId) {
+        final var assembleiaEncontrada = assembleiaService.findAssembleia(assembleiaId);
+        final var associadoEncontrado = associadoService.findById(associadoId);
 
-		if(!assembleiaEncontrada.getStatus().equals(StatusAssembleiaEnum.ABERTA)){
-			throw new NegocioException(HttpStatus.BAD_REQUEST, "A pauta de votaçao náo esta aberta!");
-		}
-		var voto = Voto.builder()
-				.tipo(TipoVotoEnum.valueOf(tipovoto))
-				.associado(associadoEncontrado)
-				.build();
-		voto.setId(null);
-		voto.setCadastro(OffsetDateTime.now());
+        if (!assembleiaEncontrada.getStatus().equals(StatusAssembleiaEnum.ABERTA)) {
+            throw new NegocioException(HttpStatus.BAD_REQUEST, "A pauta de votaçao náo esta aberta!");
+        }
+        var voto = Voto.builder()
+                .tipo(TipoVotoEnum.valueOf(tipovoto))
+                .associado(associadoEncontrado)
+                .build();
+        voto.setId(null);
+        voto.setCadastro(OffsetDateTime.now());
 
-		assembleiaEncontrada.addVoto(voto);
-		assembleiaService.update(assembleiaEncontrada);
+        assembleiaEncontrada.addVoto(voto);
+        assembleiaService.update(assembleiaEncontrada);
 
-		return voto;
-	}
+        return voto;
+    }
 }

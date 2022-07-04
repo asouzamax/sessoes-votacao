@@ -17,38 +17,38 @@ import java.time.OffsetDateTime;
 @Slf4j
 public class AssembleiaService {
 
-	private AssembleiaRepository repository;
+    private AssembleiaRepository repository;
 
 
-	public Assembleia create(final Assembleia assembleia) {
+    public Assembleia create(final Assembleia assembleia) {
 
-		assembleia.setStatus(StatusAssembleiaEnum.CRIADA);
-		assembleia.setId(null);
-		assembleia.setCadastro(OffsetDateTime.now());
+        assembleia.setStatus(StatusAssembleiaEnum.CRIADA);
+        assembleia.setId(null);
+        assembleia.setCadastro(OffsetDateTime.now());
 
-		return repository.save(assembleia);
-	}
+        return repository.save(assembleia);
+    }
 
-	public Assembleia update(final Assembleia assembleia) {
-		findAssembleia(assembleia.getId());
-		return repository.save(assembleia);
-	}
+    public Assembleia update(final Assembleia assembleia) {
+        findAssembleia(assembleia.getId());
+        return repository.save(assembleia);
+    }
 
-	public Assembleia openSession(final String assembleiaId) {
+    public Assembleia openSession(final String assembleiaId) {
 
-		final Assembleia assembleiaEncontrada = findAssembleia(assembleiaId);
-		if(assembleiaEncontrada.getStatus().equals(StatusAssembleiaEnum.ABERTA)){
-			throw new NegocioException(HttpStatus.BAD_REQUEST, "Assembleia ja em votação");
-		}
-		assembleiaEncontrada.setStatus(StatusAssembleiaEnum.ABERTA);
-		assembleiaEncontrada.setAbertura(OffsetDateTime.now());
+        final Assembleia assembleiaEncontrada = findAssembleia(assembleiaId);
+        if (assembleiaEncontrada.getStatus().equals(StatusAssembleiaEnum.ABERTA)) {
+            throw new NegocioException(HttpStatus.BAD_REQUEST, "Assembleia ja em votação");
+        }
+        assembleiaEncontrada.setStatus(StatusAssembleiaEnum.ABERTA);
+        assembleiaEncontrada.setAbertura(OffsetDateTime.now());
 
-		return repository.save(assembleiaEncontrada);
-	}
+        return repository.save(assembleiaEncontrada);
+    }
 
-	public Assembleia findAssembleia(String assembleiaId) {
-		return repository.findById(assembleiaId)
-					.orElseThrow(() -> new AssembleiaNaoEncontradaException());
-	}
+    public Assembleia findAssembleia(String assembleiaId) {
+        return repository.findById(assembleiaId)
+                .orElseThrow(() -> new AssembleiaNaoEncontradaException());
+    }
 
 }

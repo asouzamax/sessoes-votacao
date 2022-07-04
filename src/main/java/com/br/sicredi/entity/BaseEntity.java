@@ -13,18 +13,18 @@ import java.time.OffsetDateTime;
 @Getter
 @Setter
 @MappedSuperclass
-public abstract class BaseEntity implements Serializable{
+public abstract class BaseEntity implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	@Id
-	@GeneratedValue(generator = "system-uuid")
-	@GenericGenerator(name = "system-uuid", strategy = "org.hibernate.id.UUIDGenerator")
-	private String id;
+    @Id
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "org.hibernate.id.UUIDGenerator")
+    private String id;
 
-	private OffsetDateTime cadastro;
+    private OffsetDateTime cadastro;
 
 }

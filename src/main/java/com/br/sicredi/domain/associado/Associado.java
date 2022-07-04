@@ -17,12 +17,12 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 public class Associado extends BaseEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	private String nome;
+    private String nome;
 
 
 }

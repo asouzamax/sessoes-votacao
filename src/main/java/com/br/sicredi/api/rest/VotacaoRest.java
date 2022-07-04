@@ -23,19 +23,19 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class VotacaoRest extends MapperRest<Voto, VotoDTO> {
 
-	private final VotacaoService service;
-	private final VotoRepository repository;
+    private final VotacaoService service;
+    private final VotoRepository repository;
 
-	@ApiOperation(value = "Vota em uma pauta de Assembléia")
-	@ApiResponses(value = {
-			@ApiResponse(code = 201, message = "Realiza o voto na assembleia", response = AssembleiaDTO.class),
-			@ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
-			@ApiResponse(code = 500, message = "Erros não experados")
-	})
-	@RequestMapping(path = "/{assembleiaId}/{associadoId}/{voto}/votar", method = RequestMethod.POST)
-	@ResponseStatus(HttpStatus.ACCEPTED)
-	public VotoDTO create(@PathVariable String assembleiaId, @PathVariable String associadoId, @PathVariable String voto) {
-		return fromModel(service.create(assembleiaId, voto, associadoId));
-	}
+    @ApiOperation(value = "Vota em uma pauta de Assembléia")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Realiza o voto na assembleia", response = AssembleiaDTO.class),
+            @ApiResponse(code = 400, message = "Erros negociais: validações de dados e fluxo", response = Error.class),
+            @ApiResponse(code = 500, message = "Erros não experados")
+    })
+    @RequestMapping(path = "/{assembleiaId}/{associadoId}/{voto}/votar", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public VotoDTO create(@PathVariable String assembleiaId, @PathVariable String associadoId, @PathVariable String voto) {
+        return fromModel(service.create(assembleiaId, voto, associadoId));
+    }
 
 }

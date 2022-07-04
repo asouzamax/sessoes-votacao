@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface AssociadoRepository extends JpaRepository<Associado, String> {
 
-	Optional<Associado> findByNome(String ementa);
+    Optional<Associado> findByNome(String ementa);
 }

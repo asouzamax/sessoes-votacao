@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 @Getter
 public class AbstractServiceTest {
 
-    private Associado associado;
     LocalDateTime localDateTimeNow = LocalDateTime.now();
+    private Associado associado;
 
     protected void setupAssociado() {
         associado = Associado.builder()

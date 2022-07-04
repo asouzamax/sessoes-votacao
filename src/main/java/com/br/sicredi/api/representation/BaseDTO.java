@@ -18,13 +18,13 @@ import java.time.OffsetDateTime;
 @JsonInclude(Include.NON_NULL)
 public class BaseDTO {
 
-  @NotBlank(groups = ValidationGroups.Id.class)
-  @ApiModelProperty(value = "Identificador único")
-  private String id;
-  
-  @JsonProperty(access = Access.READ_ONLY)
-  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
-  @ApiModelProperty(value = "Data de cadastro")
-  private OffsetDateTime cadastro;
+    @NotBlank(groups = ValidationGroups.Id.class)
+    @ApiModelProperty(value = "Identificador único")
+    private String id;
+
+    @JsonProperty(access = Access.READ_ONLY)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @ApiModelProperty(value = "Data de cadastro")
+    private OffsetDateTime cadastro;
 
 }
