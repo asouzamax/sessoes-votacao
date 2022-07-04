@@ -9,16 +9,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import java.time.OffsetDateTime;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 
 @Builder
@@ -36,7 +33,7 @@ public class Assembleia extends BaseEntity {
 
 	private String pauta;
 
-	@ManyToMany
+	@ManyToMany(cascade= CascadeType.MERGE)
 	@JoinTable(name = "assembleia_votacao",
 			joinColumns = { @JoinColumn(name = "assembleia_id") },
 			inverseJoinColumns = { @JoinColumn(name = "voto_id") })

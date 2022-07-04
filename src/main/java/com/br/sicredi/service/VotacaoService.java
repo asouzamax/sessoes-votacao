@@ -1,9 +1,6 @@
 package com.br.sicredi.service;
 
-import com.br.sicredi.domain.assembleia.Assembleia;
-import com.br.sicredi.domain.assembleia.AssembleiaRepository;
 import com.br.sicredi.domain.assembleia.StatusAssembleiaEnum;
-import com.br.sicredi.domain.associado.Associado;
 import com.br.sicredi.domain.exception.NegocioException;
 import com.br.sicredi.domain.voto.TipoVotoEnum;
 import com.br.sicredi.domain.voto.Voto;

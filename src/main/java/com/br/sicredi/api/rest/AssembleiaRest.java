@@ -1,15 +1,15 @@
 package com.br.sicredi.api.rest;
 
-import java.util.List;
-
 import com.br.sicredi.api.representation.model.AssembleiaDTO;
+import com.br.sicredi.api.representation.model.AssociadoDTO;
 import com.br.sicredi.domain.assembleia.Assembleia;
 import com.br.sicredi.domain.assembleia.AssembleiaRepository;
 import com.br.sicredi.service.AssembleiaService;
-import com.br.sicredi.api.representation.model.AssociadoDTO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,14 +17,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/assembleia")

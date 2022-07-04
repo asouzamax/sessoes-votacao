@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sessoes-votacao" />
         <module name="stf-consulta-atos-normativos" />
+        <module name="sessoes-votacao" />
       </profile>
     </annotationProcessing>
   </component>

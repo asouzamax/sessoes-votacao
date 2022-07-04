@@ -2,91 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb5b1a04-70f8-4c3b-8a06-eb3847654e87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/model/AssembleiaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/model/VotoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssociadoRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/AssembleiaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/StatusAssembleiaEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/AssociadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssembleiaNaoEncontradaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoJaCadastradoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoNaoEncontradoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/TipoVotoEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/VotoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssociadoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V001__tabela-associado-criacao.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V002__tabela-assembleia-criacao.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V003_1__tabela-assembleia_votacao-criacao.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V003__tabela-voto-criacao.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V004__associados-seed.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/StfConsultaAtosNormativosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/SicrediSessaoVotacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/handler/ApiRestControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/ApiRestControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/handler/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/handler/ErrorCampo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/ErrorCampo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/handler/ValidationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/ValidationGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/representation/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/BaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/representation/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/representation/model/NormativoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/model/AssociadoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/rest/MapperRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/MapperRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/rest/NormativoRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/api/rest/UIController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/config/ElasticSearchClientConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/domain/exception/NegocioException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/NegocioException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/domain/normativo/Normativo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/domain/normativo/NormativoElasticRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/service/NormativoSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssembleiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/jus/stf/swagger/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/jus/stf/consulta/atosnormativos/StfConsultaAtosNormativosApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/br/sicredi/consulta/atosnormativos/StfConsultaAtosNormativosApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start-with-docker.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/StfConsultaAtosNormativosApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/ApiRestControllerExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/Error$ErrorBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/Error.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/ErrorCampo$ErrorCampoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/ErrorCampo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/ValidationGroups$Id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/handler/ValidationGroups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/representation/BaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/representation/Mapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/representation/model/NormativoDTO$NormativoDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/representation/model/NormativoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/rest/MapperRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/rest/NormativoRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/api/rest/UIController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/config/ElasticSearchClientConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/domain/exception/NegocioException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/domain/normativo/Normativo$NormativoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/domain/normativo/Normativo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/domain/normativo/NormativoElasticRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/entity/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/service/NormativoSearchService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/jus/stf/swagger/SwaggerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stf-consulta-atos-normativos-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/stf-consulta-atos-normativos-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/jus/stf/consulta/atosnormativos/StfConsultaAtosNormativosApplicationTests.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AbstractServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssembleiaServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssociadoServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/VotacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/ApiRestControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/ApiRestControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/handler/Error.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/BaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/MapperRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/MapperRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/NegocioException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/NegocioException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/WebConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,32 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssociadoRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="24">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/Mapper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/consulta/atosnormativos/StfConsultaAtosNormativosApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -134,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+            <state relative-caret-position="175">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -143,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssembleiaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="118">
+              <caret line="40" column="88" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,10 +76,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V003_1__tabela-assembleia_votacao-criacao.sql">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssembleiaServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="105" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="105" />
+            <state relative-caret-position="87">
+              <caret line="91" column="40" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +90,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="188">
+              <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/VotacaoServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssociadoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="38" column="92" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,28 +121,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssociadoServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" selection-start-line="11" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="-6">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="24" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoNaoEncontradoException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="484" column="25" selection-start-line="484" selection-start-column="25" selection-end-line="484" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="57" />
+              <folding>
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/jus/stf/config/ElasticSearchClientConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/SicrediSessaoVotacao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/normativo/Normativo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/normativo/NormativoElasticRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/normativo/AssociadoRepository.java" />
@@ -260,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/model/VotoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/StatusAssembleiaEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssembleiaNaoEncontradaException.java" />
@@ -270,14 +209,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/representation/model/AssembleiaDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssembleiaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.migration/V003__tabela-voto-criacao.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssociadoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoJaCadastradoException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AbstractServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssembleiaServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssociadoServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/br/sicredi/service/VotacaoServiceTest.java" />
       </list>
     </option>
   </component>
@@ -313,6 +257,12 @@
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
           <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sicredi-sessoes-votacao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -320,20 +270,10 @@
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="75" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1360" />
     <option name="width" value="1360" />
-    <option name="height" value="743" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -341,6 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,38 +314,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sicredi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="representation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,31 +330,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="associado" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="voto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
@@ -458,54 +344,34 @@
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
               <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
               <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="atosnormativos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
               <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db.migration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sessoes-votacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.3" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-annotations-2.13.3.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-annotations-2.13.3.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
@@ -600,13 +466,6 @@
             <path>
               <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.3.20" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.3.20.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.springframework:spring-webmvc:5.3.20" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -629,19 +488,10 @@
               <item name="spring-webmvc-5.3.20.jar" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="stf-consulta-atos-normativos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.3.20" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.3.20.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -650,6 +500,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editorconfig.notification" value="null" />
@@ -669,9 +520,8 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.br.sicredi.domain.assembleia" />
-      <recent name="com.br.sicredi.domain.voto" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db.migration" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -680,16 +530,22 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.br.sicredi.domain.exception" />
       <recent name="com.br.sicredi.service" />
+      <recent name="com.br.sicredi.domain.exception" />
       <recent name="com.br.sicredi.api.rest" />
       <recent name="com.br.sicredi.api.representation.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/db.migration" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.br.sicredi.domain.assembleia" />
+      <recent name="com.br.sicredi.domain.voto" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -701,7 +557,86 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SicrediSessaoVotacao">
+  <component name="RunManager" selected="JUnit.VotacaoServiceTest.testCreateThrowsExceptionVotacaoEncerrada">
+    <configuration name="AssociadoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sessoes-votacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.sicredi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.sicredi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.sicredi.service.AssociadoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AssociadoServiceTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sessoes-votacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.sicredi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.sicredi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.sicredi.service.AssociadoServiceTest" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VotacaoServiceTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sessoes-votacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.sicredi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.sicredi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.sicredi.service.VotacaoServiceTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VotacaoServiceTest.testCreateThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sessoes-votacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.sicredi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.sicredi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.sicredi.service.VotacaoServiceTest" />
+      <option name="METHOD_NAME" value="testCreateThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VotacaoServiceTest.testCreateThrowsExceptionVotacaoEncerrada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sessoes-votacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.sicredi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.sicredi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.br.sicredi.service.VotacaoServiceTest" />
+      <option name="METHOD_NAME" value="testCreateThrowsExceptionVotacaoEncerrada" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SicrediSessaoVotacao" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sessoes-votacao" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.sicredi.SicrediSessaoVotacao" />
@@ -716,6 +651,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VotacaoServiceTest.testCreateThrowsExceptionVotacaoEncerrada" />
+        <item itemvalue="JUnit.VotacaoServiceTest.testCreateThrowsException" />
+        <item itemvalue="JUnit.VotacaoServiceTest.testCreate" />
+        <item itemvalue="JUnit.AssociadoServiceTest" />
+        <item itemvalue="JUnit.AssociadoServiceTest.testFindById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -735,6 +679,7 @@
       <workItem from="1656089473496" duration="4575000" />
       <workItem from="1656096188272" duration="6927000" />
       <workItem from="1656437579702" duration="13643000" />
+      <workItem from="1656939276574" duration="9193000" />
     </task>
     <task id="LOCAL-00001" summary="Configurações para conexão com o portal azure">
       <created>1655824742427</created>
@@ -746,13 +691,45 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AssociadoServiceTest_testFindById - 2022.07.04 at 12h 12m 49s.xml">
+      <configuration name="AssociadoServiceTest.testFindById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AssociadoServiceTest - 2022.07.04 at 12h 13m 55s.xml">
+      <configuration name="AssociadoServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreate - 2022.07.04 at 15h 00m 07s.xml">
+      <configuration name="VotacaoServiceTest.testCreate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreate - 2022.07.04 at 15h 01m 38s.xml">
+      <configuration name="VotacaoServiceTest.testCreate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreate - 2022.07.04 at 15h 04m 00s.xml">
+      <configuration name="VotacaoServiceTest.testCreate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreate - 2022.07.04 at 15h 04m 59s.xml">
+      <configuration name="VotacaoServiceTest.testCreate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreateThrowsException - 2022.07.04 at 15h 08m 59s.xml">
+      <configuration name="VotacaoServiceTest.testCreateThrowsException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreateThrowsException - 2022.07.04 at 15h 09m 23s.xml">
+      <configuration name="VotacaoServiceTest.testCreateThrowsException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreateThrowsException - 2022.07.04 at 15h 09m 37s.xml">
+      <configuration name="VotacaoServiceTest.testCreateThrowsException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotacaoServiceTest_testCreateThrowsExceptionVotacaoEncerrada - 2022.07.04 at 15h 11m 26s.xml">
+      <configuration name="VotacaoServiceTest.testCreateThrowsExceptionVotacaoEncerrada" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33950000" />
+    <option name="totallyTimeSpent" value="43143000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="75" width="1360" height="743" extended-state="0" />
+    <frame x="-1360" y="0" width="1360" height="768" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2989378" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30349013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -760,22 +737,23 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" sideWeight="0.49924126" weight="0.329582" />
+      <window_info anchor="bottom" id="Run Dashboard" weight="0.47407407" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891247" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62367225" weight="0.42926046" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6616085" weight="0.4324759" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.62367225" visible="true" weight="0.42814815" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6616085" weight="0.4311111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49848256" weight="0.32636657" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49848256" weight="0.32592592" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32891247" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3279743" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32740742" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007587" side_tool="true" weight="0.29742765" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32891247" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.49924126" weight="0.329582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -788,7 +766,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2989378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30349013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -796,22 +774,23 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49924126" weight="0.329582" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.47407407" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32891247" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62367225" weight="0.42926046" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.6616085" visible="true" weight="0.4324759" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62367225" weight="0.42814815" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.6616085" weight="0.4324759" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49848256" weight="0.32636657" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32891247" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3279743" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32740742" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007587" side_tool="true" weight="0.29742765" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32891247" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" sideWeight="0.49924126" weight="0.329582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -831,18 +810,37 @@
     <MESSAGE value="Configurações para conexão com o portal azure" />
     <option name="LAST_COMMIT_MESSAGE" value="Configurações para conexão com o portal azure" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssembleiaServiceTest.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/VotacaoServiceTest.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/AssociadoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/R__001-usuarios-seed.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V001__tabela-usuario-criacao.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V005_1__tabela-filme-atores-criacao.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V004_1__tabela-episodio-atores-criacao.sql" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.3.20/spring-orm-5.3.20.jar!/org/springframework/orm/jpa/vendor/Database.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -865,13 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/SwaggerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -978,18 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V004__associados-seed.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1044,16 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssociadoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/NegocioException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -1072,24 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="45" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoNaoEncontradoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1114,27 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="484" column="25" selection-start-line="484" selection-start-column="25" selection-end-line="484" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" selection-start-line="11" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1142,44 +1072,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssociadoRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssembleiaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="161">
+          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V003_1__tabela-assembleia_votacao-criacao.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="105" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1190,13 +1089,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssociadoRest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V003_1__tabela-assembleia_votacao-criacao.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="105" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6060">
+          <caret line="484" column="25" selection-start-line="484" selection-start-column="25" selection-end-line="484" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/associado/Associado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="11" selection-start-line="11" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/voto/Voto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/VotoJaComputadoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/swagger/SwaggerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AbstractServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/AssembleiaRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/api/rest/VotacaoRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/consulta/atosnormativos/StfConsultaAtosNormativosApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssociadoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="38" column="92" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/exception/AssociadoNaoEncontradoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="57" />
+          <folding>
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssociadoServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/domain/assembleia/Assembleia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/AssembleiaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="40" column="88" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/br/sicredi/service/VotacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/AssembleiaServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="91" column="40" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/br/sicredi/service/VotacaoServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
         </state>
       </provider>
     </entry>

@@ -10,7 +10,7 @@ public class VotoJaComputadoException extends NegocioException {
   private static final long serialVersionUID = 1L;
 
   public VotoJaComputadoException() {
-    super(HttpStatus.NOT_FOUND, "O voto ja foi computado!");
+    super(HttpStatus.BAD_REQUEST, "O voto ja foi computado!");
   }
 
 }

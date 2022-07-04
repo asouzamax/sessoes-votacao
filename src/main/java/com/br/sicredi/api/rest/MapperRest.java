@@ -1,15 +1,14 @@
 package com.br.sicredi.api.rest;
 
+import com.br.sicredi.api.representation.BaseDTO;
+import com.br.sicredi.entity.BaseEntity;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import com.br.sicredi.api.representation.BaseDTO;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.br.sicredi.entity.BaseEntity;
 
 public abstract class MapperRest<M extends BaseEntity, R extends BaseDTO> {
 

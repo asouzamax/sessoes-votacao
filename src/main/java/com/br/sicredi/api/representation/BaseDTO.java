@@ -1,20 +1,17 @@
 package com.br.sicredi.api.representation;
 
-import java.time.OffsetDateTime;
-
-import javax.validation.constraints.NotBlank;
-
+import com.br.sicredi.api.handler.ValidationGroups;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
-
-import com.br.sicredi.api.handler.ValidationGroups;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
+
+import javax.validation.constraints.NotBlank;
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter

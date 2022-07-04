@@ -1,16 +1,14 @@
 package com.br.sicredi.api.handler;
 
-import java.time.LocalDateTime;
-import java.util.Collection;
-
-import org.springframework.http.HttpStatus;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
 import lombok.Builder;
 import lombok.Getter;
+import org.springframework.http.HttpStatus;
+
+import java.time.LocalDateTime;
+import java.util.Collection;
 
 @Getter
 @Builder
